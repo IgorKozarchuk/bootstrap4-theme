@@ -1,0 +1,58 @@
+@import "vars";
+
+// main style
+body {
+	color: $fontColor;
+	background-color: $bgColor;
+}
+
+.navbar {
+	border-bottom: 3px solid $accent;
+	opacity: 0.8;
+}
+
+#home-section {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 700px;
+	position: relative;
+
+	.home-inner {
+		padding-top: 150px;
+		padding-bottom: 50px;
+	}
+
+	.card-form {
+		opacity: 0.8;
+	}
+}
+
+.dark-overlay::before {
+	content: "";
+	background-color: $darkOverlay;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#home-section, #create-section {
+	.fa {
+		color: $accent;
+		background-color: #fff;
+		padding: 4px;
+		border-radius: 5px;
+		font-size: $iconSize;
+	}
+}
+
+#explore-section, #share-section {
+	.fa {
+		color: #fff;
+		background-color: #333;
+		padding: 4px;
+		border-radius: 5px;
+		font-size: $iconSize;
+	}
+}
